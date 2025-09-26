@@ -11,13 +11,14 @@ filter_weight = np.random.randint(-5, 6, (5, 5), dtype=int)
 output = eyeriss.Conv2d(picture, filter_weight, 1, 1)
 
 print("Input shape:", picture.shape)
-print("Filter shape:", filter_weight.shape)
-print("Output shape:", output.shape)
-
+print('Input Image')
 print(picture)
-
+print()
+print("Filter shape:", filter_weight.shape)
+print('Filter Matrix')
 print(filter_weight)
+print()
 
-
+print("Output shape:", output.shape)
+print('Output Matrix')
 print(output)
-
