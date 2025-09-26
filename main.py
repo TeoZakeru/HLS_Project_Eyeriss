@@ -5,8 +5,8 @@ eyeriss = EyerissF()
 
 np.random.seed(1)
 
-picture = np.random.randint(0, 10, (5, 5), dtype=int)
-filter_weight = np.random.randint(-5, 6, (3, 3), dtype=int)
+picture = np.random.randint(0, 255, (18, 18), dtype=int)
+filter_weight = np.random.randint(-5, 6, (5, 5), dtype=int)
 
 output = eyeriss.Conv2d(picture, filter_weight, 1, 1)
 
@@ -17,5 +17,6 @@ print("Output shape:", output.shape)
 print(picture)
 
 print(filter_weight)
+
 
 print(output)
